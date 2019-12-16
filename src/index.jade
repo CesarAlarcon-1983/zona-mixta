@@ -2,3 +2,106 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            .container
+                .row
+                    .col-24.col-md-12
+                        .home__hero__container
+                            h2.home__hero__title Consultoría en imagen y comunicación
+
+                    .col-24.col-md-12
+                        .home__hero__logo
+                            img(src="/images/logo.png")
+        section.home__que-hacemos#que-hacemos
+            .container
+                .row
+                    .col-24
+                        h2.home__que-hacemos__title qué hacemos
+            .home__que-hacemos__container
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-1.png")
+                    img(src="https://picsum.photos/id/237/1200/1000")
+                    h3.home__que-hacemos__wrapper-title comunicación<br>de empresa
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-2.png")
+                    img(src="https://picsum.photos/id/238/1200/1000")
+                    h3.home__que-hacemos__wrapper-title comunicación<br>deportiva
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-3.png")
+                    img(src="https://picsum.photos/id/239/1200/1000")
+                    h3.home__que-hacemos__wrapper-title comunicación<br>publicitaria
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-4.png")
+                    img(src="https://picsum.photos/id/236/1200/1000")
+                    h3.home__que-hacemos__wrapper-title comunicación<br>política
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-5.png")
+                    img(src="https://picsum.photos/id/235/1200/1000")
+                    h3.home__que-hacemos__wrapper-title medios
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-6.png")
+                    img(src="https://picsum.photos/id/234/1200/1000")
+                    h3.home__que-hacemos__wrapper-title rrss
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-7.png")
+                    img(src="https://picsum.photos/id/233/1200/1000")
+                    h3.home__que-hacemos__wrapper-title diseño<br>y creatividad
+                a.home__que-hacemos__wrapper(href="#")
+                    //- img(src="/images/background-8.png")
+                    img(src="https://picsum.photos/id/232/1200/1000")
+                    h3.home__que-hacemos__wrapper-title estretegia
+
+        section.home__quienes-somos#quienes-somos
+            .container
+                .row
+                    .col-24
+                        h2.home__quienes-somos__title quiénes somos
+                    .col-24.col-md-8
+                        .home__quienes-somos__container
+                            .home__quienes-somos__image
+                                img(src="https://picsum.photos/id/237/1200/1000")
+                            h3.home__quienes-somos__container-title Maneco Martignoni
+                            p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    .col-24.col-md-8
+                        .home__quienes-somos__container
+                            .home__quienes-somos__image
+                                img(src="https://picsum.photos/id/237/1200/1000")
+                            h3.home__quienes-somos__container-title Walter Di Nardo
+                            p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    .col-24.col-md-8
+                        .home__quienes-somos__container
+                            .home__quienes-somos__image
+                                img(src="https://picsum.photos/id/237/1200/1000")
+                            h3.home__quienes-somos__container-title Federico del Rio
+                            p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+
+        section.home__contacto#contacto
+            .container
+                .row
+                    .col-24.col-md-12
+                        .home__contacto__heading
+                            h2.home__contacto__title contacto
+                        .home__contacto__content
+                            a.home__contacto__link(href="mailto:info@zonamixta.com.ar" target="_blank") info@zonamixta.com.ar
+                            ul.home__contacto__social
+                                li.home__contacto__item
+                                    a(href="https://twitter.com/ZonaMixtaPress?s=20" target="_blank")
+                                        i.fa.fa-twitter
+                                        p @zonamixtapress
+                                li.home__contacto__item
+                                    a(href="#")
+                                        i.fa.fa-facebook
+                                        p /zonamixtapress
+                            a.home__contacto__link(href="http://www.zonamixta.com.ar" target="_blank") www.zonamixta.com.ar
+                            p.home__contacto__text Avenida Caseros 781 1ro. B<br>CP C1152AAD<br><br>Ciudad Autónoma de Buenos Aires
+
+                    .col-24.col-md-12
+                        .home__contacto__heading
+                            .home__contacto__logo
+                                img(src="/images/logo.png")
+                        form.home__contacto__form
+                            input.home__contacto__input(placeholder="Nombre")
+                            input.home__contacto__input(placeholder="Apellido")
+                            input.home__contacto__input(placeholder="Correo")
+                            textarea.home__contacto__input.home__contacto__input--textarea(placeholder="Mensaje")
+                            button.home__contacto__button enviar
