@@ -1,7 +1,27 @@
 .home {
     &__hero {
-        background: $blue;
+        background: url('/images/hero.jpg') no-repeat center center / cover;
         height: 100vh;
+        position: relative;
+        overflow: hidden;
+
+        &__colon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                height: auto;
+                width: 50%;
+                opacity: .7;
+            }
+        }
 
         &__container {
             height: 100vh;
@@ -13,9 +33,10 @@
             color: $white;
             font-size: 30px;
             font-weight: 900;
+            text-transform: uppercase;
 
             @include mq(md) {
-                font-size: 60px;
+                font-size: 50px;
             }
         }
 
@@ -26,7 +47,7 @@
             justify-content: flex-end;
 
             img {
-                width: 50%;
+                width: 60%;
                 height: auto;
                 margin-right: 10%;
             }
@@ -43,7 +64,7 @@
         &__title {
             margin: 0;
             margin-bottom: 50px;
-            color: $corpBlack;
+            color: $darkGray;
             font-size: 30px;
             font-weight: 900;
             text-transform: uppercase;
@@ -76,20 +97,9 @@
                 top: 50%;
                 left: 50%;
                 transform: translate3d(-50%, -50%, 0);
-                width: auto;
-                height: 100%;
-            }
-
-            &:nth-child(odd) {
-                .home__que-hacemos__wrapper-title {
-                    top: 65%;
-                }
-            }
-
-            &:nth-child(even) {
-                .home__que-hacemos__wrapper-title {
-                    top: 25%;
-                }
+                width: 100%;
+                height: auto;
+                filter: grayscale(100%);
             }
 
             &:after {
@@ -100,7 +110,47 @@
                 right: 0;
                 bottom: 0;
                 background: $black;
-                opacity: .3;
+                opacity: .5;
+            }
+
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(8) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: $blue;
+                    opacity: .5;
+                    mix-blend-mode: normal;
+                }
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(7),
+            &:nth-child(8) {
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            &:nth-child(odd) {
+
+                .home__que-hacemos__wrapper-title {
+                    top: 65%;
+                }
+            }
+
+            &:nth-child(even) {
+                .home__que-hacemos__wrapper-title {
+                    top: 25%;
+                }
             }
         }
 
@@ -147,8 +197,8 @@
 
         &__image {
             height: 0;
-            padding-bottom: 50%;
-            width: 50%;
+            padding-bottom: 60%;
+            width: 60%;
             overflow: hidden;
             position: relative;
             border-radius: 50%;
@@ -158,17 +208,17 @@
 
             img {
                 position: absolute;
-                left: 50%;
+                left: 30%;
                 top: 50%;
                 transform: translate3d(-50%, -50%, 0);
-                width: auto;
-                height: 100%;
+                width: 150%;
+                height: auto;
                 border-radius: 50%;
             }
         }
 
         &__container-title {
-            color: $corpBlack;
+            color: $darkGray;
             text-align: center;
             font-size: 20px;
             font-weight: 900;
@@ -177,7 +227,7 @@
         }
 
         &__container-text {
-            color: $corpBlack;
+            color: $darkGray;
             margin: 0;
             text-align: center;
             margin-bottom: 50px;
@@ -189,18 +239,69 @@
     }
 
     &__contacto {
-        background: $lightGray;
+        background: $blue;
         padding: 50px 0;
+        position: relative;
+        overflow: hidden;
 
         @include mq(md) {
             padding: 100px 0;
         }
 
+        &__colon {
+            // display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85vh;
+
+            @include mq(md) {
+                width: 55%;
+                height: 100%;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 100%;
+
+                @include mq(md) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
         &__heading {
-            margin-bottom: 50px;
+            height: 80px;
             
             @include mq(md) {
-                height: 80px;
+                margin-bottom: 50px;
+            }
+
+            &--logo {
+                margin-bottom: 30px;
+
+                @include mq(md) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__logo {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                width: auto;
             }
         }
 
@@ -216,12 +317,21 @@
             }
         }
 
+        &__content {
+            height: 60vh;
+        }
+
         &__link {
             display: block;
             color: $blue;
             text-decoration: none;
             font-weight: 900;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+            
+            @include mq(md) {
+                margin-bottom: 50px;
+
+            }
         }
 
         &__item {
@@ -260,7 +370,7 @@
             width: 100%;
             height: 40px;
             padding: 0 20px;
-            color: $corpBlack;
+            color: $darkGray;
             margin-bottom: 20px;
             border: none;
             outline: none;

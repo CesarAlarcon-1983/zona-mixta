@@ -3,6 +3,8 @@ extends _layouts/base
 block content
     main.home
         section.home__hero
+            .home__hero__colon
+                img(src="/images/comilla-hero.png")
             .container
                 .row
                     .col-24.col-md-12
@@ -19,36 +21,28 @@ block content
                         h2.home__que-hacemos__title qué hacemos
             .home__que-hacemos__container
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-1.png")
-                    img(src="https://picsum.photos/id/237/1200/1000")
+                    img(src="/images/que-hacemos-1.png")
                     h3.home__que-hacemos__wrapper-title comunicación<br>de empresa
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-2.png")
-                    img(src="https://picsum.photos/id/238/1200/1000")
+                    img(src="/images/que-hacemos-2.png")
                     h3.home__que-hacemos__wrapper-title comunicación<br>deportiva
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-3.png")
-                    img(src="https://picsum.photos/id/239/1200/1000")
+                    img(src="/images/que-hacemos-3.png")
                     h3.home__que-hacemos__wrapper-title comunicación<br>publicitaria
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-4.png")
-                    img(src="https://picsum.photos/id/236/1200/1000")
+                    img(src="/images/que-hacemos-4.png")
                     h3.home__que-hacemos__wrapper-title comunicación<br>política
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-5.png")
-                    img(src="https://picsum.photos/id/235/1200/1000")
+                    img(src="/images/que-hacemos-5.jpg")
                     h3.home__que-hacemos__wrapper-title medios
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-6.png")
-                    img(src="https://picsum.photos/id/234/1200/1000")
+                    img(src="/images/que-hacemos-6.png")
                     h3.home__que-hacemos__wrapper-title rrss
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-7.png")
-                    img(src="https://picsum.photos/id/233/1200/1000")
+                    img(src="/images/que-hacemos-7.png")
                     h3.home__que-hacemos__wrapper-title diseño<br>y creatividad
                 a.home__que-hacemos__wrapper(href="#")
-                    //- img(src="/images/background-8.png")
-                    img(src="https://picsum.photos/id/232/1200/1000")
+                    img(src="/images/que-hacemos-8.jpg")
                     h3.home__que-hacemos__wrapper-title estretegia
 
         section.home__quienes-somos#quienes-somos
@@ -59,23 +53,25 @@ block content
                     .col-24.col-md-8
                         .home__quienes-somos__container
                             .home__quienes-somos__image
-                                img(src="https://picsum.photos/id/237/1200/1000")
+                                img(src="/images/maneco.jpg")
                             h3.home__quienes-somos__container-title Maneco Martignoni
                             p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     .col-24.col-md-8
                         .home__quienes-somos__container
                             .home__quienes-somos__image
-                                img(src="https://picsum.photos/id/237/1200/1000")
+                                img(src="/images/walter.jpg")
                             h3.home__quienes-somos__container-title Walter Di Nardo
                             p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
                     .col-24.col-md-8
                         .home__quienes-somos__container
                             .home__quienes-somos__image
-                                img(src="https://picsum.photos/id/237/1200/1000")
+                                img(src="/images/fede.jpg")
                             h3.home__quienes-somos__container-title Federico del Rio
                             p.home__quienes-somos__container-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
 
         section.home__contacto#contacto
+            .home__contacto__colon
+                img(src="/images/comilla-footer.png")
             .container
                 .row
                     .col-24.col-md-12
@@ -96,7 +92,7 @@ block content
                             p.home__contacto__text Avenida Caseros 781 1ro. B<br>CP C1152AAD<br><br>Ciudad Autónoma de Buenos Aires
 
                     .col-24.col-md-12
-                        .home__contacto__heading
+                        .home__contacto__heading.home__contacto__heading--logo
                             .home__contacto__logo
                                 img(src="/images/logo.png")
                         form.home__contacto__form

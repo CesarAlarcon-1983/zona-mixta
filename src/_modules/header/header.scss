@@ -16,11 +16,25 @@
 
         @include mq(md) {
             height: 20vh;
+            justify-content: flex-end;
         }
     }
 
     &__logo {
         z-index: 2000;
+        height: 100%;
+        position: relative;
+        
+        @include mq(md) {
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 80%;
+        }
     }
 
     &__wrapper {
